@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Student research comparison of burger franchise brands in South Korea.">
+<title>South Korea Burger Franchise Comparison</title>
+<style>
+:root{color-scheme:light;--ink:#172033;--muted:#5d687d;--line:#dce3ee;--blue:#174ea6;--bg:#f5f7fb}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif}
+header{background:linear-gradient(130deg,#10284d,#174ea6);color:white;padding:clamp(28px,6vw,60px) 18px}header>div,main,footer{max-width:1050px;margin:auto}h1{font-size:clamp(2rem,6vw,3.6rem);line-height:1.08;margin:.5rem 0}header p{max-width:760px;color:#e7edff}
+main{padding:20px 14px 50px}section{background:white;border:1px solid var(--line);border-radius:16px;padding:clamp(16px,3vw,26px);margin:16px 0}h2{margin:0 0 10px;font-size:1.45rem}h3{margin:.2rem 0 .5rem;font-size:1.05rem}.muted{color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.brand,.criteria-card{border:1px solid var(--line);border-radius:12px;padding:15px}.mark{background:#e8efff;color:var(--blue);border-radius:10px;display:grid;place-items:center;width:40px;height:40px;font-weight:900;margin-bottom:8px}.criteria{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.criteria-card{background:#f8faff}.note{background:#fff4d6;border:1px solid #e6c35b;border-radius:12px;padding:14px}.table-wrap{overflow-x:auto}table{border-collapse:collapse;width:100%;min-width:700px}th,td{text-align:left;vertical-align:top;padding:12px;border-bottom:1px solid var(--line)}th{background:#eff3fa}small{display:block;color:var(--muted)}button{font:inherit;font-weight:750;padding:11px 14px;border:0;border-radius:10px;background:var(--blue);color:white;cursor:pointer}button.secondary{background:#e8edf5;color:#172033}button:disabled{opacity:.45;cursor:not-allowed}.controls{display:flex;gap:10px;flex-wrap:wrap;margin:12px 0}.status{font-size:.92rem;color:var(--muted)}a{color:var(--blue);overflow-wrap:anywhere}code{white-space:normal;overflow-wrap:anywhere;background:#eff3fa;border-radius:5px;padding:3px 5px}.query{padding:12px 0;border-bottom:1px solid var(--line)}.query:last-child{border:0}li{margin:.55rem 0}.ko{border-left:4px solid var(--blue);padding-left:12px;margin-top:16px}footer{padding:0 14px 30px;color:var(--muted);font-size:.9rem}
+@media(max-width:680px){.grid,.criteria{grid-template-columns:1fr}.controls{display:grid;grid-template-columns:1fr}button{width:100%}section{padding:16px}}
+</style>
+</head>
+<body>
+<header><div><div>STUDENT RESEARCH · SOUTH KOREA</div><h1>Burger Franchise Comparison</h1><p>A transparent comparison of Lotteria, Burger King, and McDonald’s, with research criteria, Google search queries, and original source links.</p></div></header>
+<main>
+<section><h2>1. Brand introductions</h2><div class="grid">
+<article class="brand"><div class="mark">L</div><h3>Lotteria</h3><p>A burger chain with a broad presence across South Korea. Official records are needed to confirm a same-year franchise-only count.</p></article>
+<article class="brand"><div class="mark">BK</div><h3>Burger King</h3><p>An international burger brand in South Korea. Total stores can include both company-operated and franchise-operated locations.</p></article>
+<article class="brand"><div class="mark">M</div><h3>McDonald’s</h3><p>An international fast-food brand in South Korea. Total restaurant count is not the same as franchise-only count.</p></article>
+</div></section>
+<section><h2>2. Comparison criteria</h2><div class="criteria">
+<div class="criteria-card"><strong>Primary metric</strong><br>Number of franchisee-operated locations</div>
+<div class="criteria-card"><strong>Preferred base year</strong><br>2024, if verified for all three brands</div>
+<div class="criteria-card"><strong>Unit</strong><br>Locations (store count)</div>
+<div class="criteria-card"><strong>Comparison rule</strong><br>Same year, same metric, same ownership definition</div>
+</div><p>Optional secondary metric: average annual revenue per franchise location, measured in Korean won (KRW) per location per year. Only compare figures from the same base year and equivalent definitions.</p><div class="note"><strong>Data limitation:</strong> The research material available for this page does not confirm comparable, official franchise-only counts for all three brands. Approximate total-store counts are not substituted for franchise-only figures. Unverified values are not ranked.</div></section>
+<section><h2>3. Comparison table</h2><p class="muted">Values remain “Unverified” until confirmed in official same-year records. Sorting is available only when at least two comparable numerical values are present.</p>
+<div class="controls"><button id="desc" disabled>Highest to Lowest</button><button id="asc" class="secondary" disabled>Lowest to Highest</button></div><p id="status" class="status" aria-live="polite">Sorting is disabled: fewer than two verified values are available for the same metric and base year.</p>
+<div class="table-wrap"><table><thead><tr><th>Brand</th><th>Franchise locations</th><th>Average annual revenue per franchise location</th><th>Base year / status</th><th>Original source</th></tr></thead><tbody id="rows">
+<tr data-brand="Lotteria" data-locations="" data-revenue="" data-year=""><td><strong>Lotteria</strong></td><td>Unverified<small>locations</small></td><td>Unverified<small>KRW/location/year</small></td><td>2024 preferred; exact value not confirmed</td><td><a href="https://www.ftc.go.kr/" target="_blank" rel="noopener noreferrer">Korea Fair Trade Commission</a></td></tr>
+<tr data-brand="Burger King" data-locations="" data-revenue="" data-year=""><td><strong>Burger King</strong></td><td>Unverified<small>locations</small></td><td>Unverified<small>KRW/location/year</small></td><td>2024 preferred; exact value not confirmed</td><td><a href="https://www.ftc.go.kr/" target="_blank" rel="noopener noreferrer">Korea Fair Trade Commission</a></td></tr>
+<tr data-brand="McDonald’s" data-locations="" data-revenue="" data-year=""><td><strong>McDonald’s</strong></td><td>Unverified<small>locations</small></td><td>Unverified<small>KRW/location/year</small></td><td>2024 preferred; exact value not confirmed</td><td><a href="https://www.ftc.go.kr/" target="_blank" rel="noopener noreferrer">Korea Fair Trade Commission</a></td></tr>
+</tbody></table></div><p class="muted">Unverified entries are never treated as zero. The buttons enable automatically if verified numeric values and matching base years are added to the table’s data attributes.</p></section>
+<section><h2>4. Google search history</h2><p>Run each query separately. Note the result types, publication date, and base year of the underlying data.</p>
+<div class="query"><h3>Search 1 — General results</h3><code>Domestic franchise revenue rankings</code><p>Expected difference: broad results such as news, rankings, reports, and franchise information. Check whether “revenue” means brand sales, franchisee sales, or sales per location.</p></div>
+<div class="query"><h3>Search 2 — PDF files</h3><code>Domestic franchise revenue rankings filetype:pdf</code><p>Expected difference: emphasizes PDF documents such as reports and statistical tables. A PDF is not automatically an official source.</p></div>
+<div class="query"><h3>Search 3 — Naver domain</h3><code>Domestic franchise revenue rankings site:naver.com</code><p>Expected difference: restricts results to the Naver domain. Verify the original publisher and source data.</p></div>
+<div class="query"><h3>Search 4 — Date range</h3><code>Domestic franchise revenue rankings after:2024-06-01 before:2026-01-01</code><p>Expected difference: narrows results to pages Google associates with the specified dates. Confirm the publication date on the page itself.</p></div>
+<div class="note"><strong>Publication date vs. base year:</strong> An article published in 2025 might report sales or store counts from 2023 or 2024. Record these dates separately.</div></section>
+<section><h2>5. Conclusion</h2><p>These three brands operate in the same industry and national market, so they are suitable subjects for comparison. A fair ranking requires the same metric, base year, unit, and store-ownership definition. At present, the comparable official franchise-only values have not been verified, so no brand is ranked.</p><div class="ko"><h3>한국어 요약</h3><p>이 페이지는 한국의 롯데리아, 버거킹, 맥도날드를 비교합니다. 공정한 비교를 위해 동일한 기준 연도와 동일한 지표를 사용해야 합니다. 전체 매장 수와 가맹점 수는 다를 수 있으므로 구분해야 합니다. 현재 세 브랜드의 동일 연도 가맹점 수를 모두 확인하지 못했기 때문에 임의의 숫자를 넣거나 순위를 매기지 않았습니다.</p></div></section>
+<section><h2>6. Original source links</h2><ol>
+<li><a href="https://www.ftc.go.kr/" target="_blank" rel="noopener noreferrer">Korea Fair Trade Commission (FTC)</a> — official regulator; look for franchise disclosure statistics and brand-level records.</li>
+<li><a href="https://www.data.go.kr/data/15110241/openapi.do" target="_blank" rel="noopener noreferrer">Korea Public Data Portal — franchise brand information</a> — official public-data listing; check field definitions and reference year.</li>
+<li><a href="https://m.korea.kr/briefing/pressReleaseView.do?newsId=156683272" target="_blank" rel="noopener noreferrer">Korea Policy Briefing — franchise statistics</a> — government briefing; distinguish its publication date from the data year.</li>
+<li><a href="https://www.mcdonalds.co.kr/" target="_blank" rel="noopener noreferrer">McDonald’s Korea official website</a> — brand information; total stores may not equal franchise-only stores.</li>
+<li><a href="https://www.burgerking.co.kr/" target="_blank" rel="noopener noreferrer">Burger King Korea official website</a> — brand information; use dated disclosure data for comparable counts.</li>
+<li><a href="https://www.lotteria.com/" target="_blank" rel="noopener noreferrer">Lotteria official website</a> — brand information; use dated disclosure data for comparable counts.</li>
+</ol><p class="muted">Before submission, open each source and record the exact metric, unit, base year, and publication date. The links are provided for verification; no missing figure is presented as verified.</p></section>
+</main><footer>Student research webpage · Built with HTML, CSS, and vanilla JavaScript. No external APIs or JavaScript libraries are required.</footer>
+<script>
+(function(){
+ const tbody=document.getElementById('rows'), desc=document.getElementById('desc'), asc=document.getElementById('asc'), status=document.getElementById('status');
+ function comparable(metric){return Array.from(tbody.querySelectorAll('tr')).map(row=>({row,value:row.dataset[metric],year:row.dataset.year})).filter(x=>x.value!==''&&Number.isFinite(Number(x.value))&&x.year!=='');}
+ function available(){return ['locations','revenue'].some(m=>{const x=comparable(m);return x.length>=2&&new Set(x.map(a=>a.year)).size===1;});}
+ function update(){desc.disabled=asc.disabled=!available();}
+ function sort(direction){let metric='locations',x=comparable(metric);if(!(x.length>=2&&new Set(x.map(a=>a.year)).size===1)){metric='revenue';x=comparable(metric);}
+ if(x.length<2||new Set(x.map(a=>a.year)).size!==1){status.textContent='Sorting unavailable: at least two verified numerical values from the same base year are required.';update();return;}
+ x.sort((a,b)=>direction==='asc'?Number(a.value)-Number(b.value):Number(b.value)-Number(a.value));x.forEach(a=>tbody.appendChild(a.row));status.textContent=direction==='asc'?'Sorted from lowest to highest using comparable verified values.':'Sorted from highest to lowest using comparable verified values.';}
+ desc.addEventListener('click',()=>sort('desc'));asc.addEventListener('click',()=>sort('asc'));update();
+})();
+</script></body></html>
